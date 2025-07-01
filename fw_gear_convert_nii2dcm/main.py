@@ -4,7 +4,6 @@ import logging
 
 log = logging.getLogger(__name__)
 
-
 def run(context, debug):
     """Run the algorithm defined in this gear.
 
@@ -62,6 +61,8 @@ def run(context, debug):
 
             nifti_files_to_proc = nifti_files_to_proc.reset_index(drop=True)
             
+            print(nifti_files_to_proc.head())
+            
             # run the conversion gear for each remaining nifti file
             gear_name = 'nifti-to-dicom'
             gear2run = fw.lookup(f'gears/{gear_name}')
@@ -73,7 +74,7 @@ def run(context, debug):
                 inputs = {'nifti-file':file}
                 job_id = gear2run.run(inputs=inputs, priority='high')
                 # job_id = gear2run.run(inputs=inputs, priority='low')
-                print(f'Queued file: {ind}/{n_files}')
+                print(f'Queued file: {ind+1}/{n_files}')
 
         # if dest_parent_type == "project":
         #     for subject in dest_parent.subjects():
