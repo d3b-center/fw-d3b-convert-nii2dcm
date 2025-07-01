@@ -14,7 +14,7 @@
       "suite": "Curation"
     },
     "gear-builder": {
-      "category": "utility",
+      "category": "analysis",
       "image": "chop.flywheel.io/d3b-convert-nii2dcm:0.0.0"
     }
   },

@@ -23,7 +23,7 @@ _License:_ MIT
 
 ### Classification
 
-_Category:_ Utility
+_Category:_ Analysis
 
 _Gear Level:_
 
