@@ -1,0 +1,46 @@
+{
+  "author": "D3b-TIRU",
+  "cite": "",
+  "command": "python run.py",
+  "config": {
+    "debug": {
+      "default": false,
+      "description": "Log debug messages",
+      "type": "boolean"
+    }
+  },
+  "custom": {
+    "flywheel": {
+      "suite": "Curation"
+    },
+    "gear-builder": {
+      "category": "utility",
+      "image": "chop.flywheel.io/d3b-convert-nii2dcm:0.0.0"
+    }
+  },
+  "environment": {
+    "FLYWHEEL": "/flywheel/v0",
+    "GPG_KEY": "E3FF2839C048B25C084DEBE9B26995E310250568",
+    "LANG": "C.UTF-8",
+    "PATH": "/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "PWD": "/flywheel/v0",
+    "PYTHON_GET_PIP_SHA256": "5aefe6ade911d997af080b315ebcb7f882212d070465df544e1175ac2be519b4",
+    "PYTHON_GET_PIP_URL": "https://github.com/pypa/get-pip/raw/5eaac1050023df1f5c98b173b248c260023f2278/public/get-pip.py",
+    "PYTHON_PIP_VERSION": "22.0.4",
+    "PYTHON_SETUPTOOLS_VERSION": "57.5.0",
+    "PYTHON_VERSION": "3.8.13"
+  },
+  "inputs": {
+    "api-key": {
+      "base": "api-key"
+    }
+  },
+  "label": "Convert nii2dcm (project-level)",
+  "description": "Convert nifti files 2 DICOM (project-level)",
+  "license": "MIT",
+  "maintainer": "D3b-TIRU <flywheel@d3b.center>",
+  "name": "d3b-convert-nii2dcm",
+  "source": "https://github.com/d3b-center/fw-d3b-convert-nii2dcm",
+  "url": "",
+  "version": "0.0.1"
+}
