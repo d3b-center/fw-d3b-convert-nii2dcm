@@ -1,6 +1,4 @@
-# FHIR Bundle Exporter <!-- omit in toc -->
-
-Export Flywheel Subjects as FHIR Bundles in json files.
+# Nifti to DICOM (project-level) <!-- omit in toc -->
 
 - [Overview](#overview)
   - [Summary](#summary)
@@ -11,16 +9,13 @@ Export Flywheel Subjects as FHIR Bundles in json files.
   - [Inputs](#inputs)
   - [Config](#config)
   - [Outputs](#outputs)
-    - [FHIR Bundle Contents](#fhir-bundle-contents)
-    - [Validating FHIR Bundles](#validating-fhir-bundles)
-- [Contributing](#contributing)
-- [Disclaimer](#disclaimer)
 
 ## Overview
 
 ### Summary
 
-Run nifti to DICOM conversion for all .
+Run nifti to DICOM conversion for all nifti files in a project
+(skips niftis that already have a corresponding DICOM).
 
 ### License
 
